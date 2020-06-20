@@ -1,7 +1,9 @@
-const array = [1, 2, 4, 8, 16, 32, 64, 128];//dontknow yet
-let turn = false;
+var lamps = document.querySelectorAll('div.lamp');
+console.log(lamps);
 
-function change(turn) {
+var turn = false;
+
+function change(lamp) {    
     if(!turn){
         lamp.style.backgroundColor = 'yellow';           
         turn = true        
@@ -9,6 +11,13 @@ function change(turn) {
         lamp.style.backgroundColor = 'white';           
         turn = false        
     }   
+    console.log(turn)
 }
+
+lamps.forEach(lamp => {
+    console.log(lamp);
+    lamp.addEventListener('click', () => change(lamp));    
+})
+
 
 
