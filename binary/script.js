@@ -24,21 +24,28 @@ function binario (id) {
     //console.log(id);//string             
     let k = 1;      
     binaryElement.innerHTML = '';    
-    for(let i = 0; i<7; i++){        
+    for(let i = 7; i>0; i--){        
         if(id==k)
             arr[i] = 1;            
         k+=k;
-       binaryElement.appendChild(document.createTextNode(arr[i]));        
-    }          
+       
+    }    
+    for(let i = 0; i<8; i++){
+        binaryElement.appendChild(document.createTextNode(arr[i]));        
+    }
+
 }
 
 function tiraBinario(id) {
     let k = 1;
     binaryElement.innerHTML = '';
-    for(let i = 0; i<arr.length; i++){
+    for(let i = 7; i>0; i--){
         if(id==k)
             arr[i] = 0;
-        k+=k
+        k+=k        
+    }
+
+    for(let i = 0; i<8; i++){
         binaryElement.appendChild(document.createTextNode(arr[i]));        
     }
 }
