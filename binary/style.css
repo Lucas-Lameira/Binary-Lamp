@@ -3,14 +3,16 @@ body {
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    background-color: rgb(136, 130, 130);
+    background-color: rgb(27, 27, 27);
+    font-family: sans-serif;
 }
 
 #container {
-    border: 3px solid orange;
-    width: 85%;
+    width: 80%;
     height: 40%;
-
+    
+    border: 3px solid orange;
+    border-radius: 8px;
     margin: auto;
     padding: 50px;
 
@@ -29,7 +31,7 @@ body {
     width: 56px;
     height: 56px;
     
-    background-color: white;
+    /**background-color: white;*/
 
     border-radius: 50px;
     margin-bottom: 8px;
@@ -57,6 +59,35 @@ p {
 
 p#last {
     padding: 0;
-    margin-left: 4px;
-    margin-right: 8px ;
+    margin-left: 0px;
+    margin-right: 2px ;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#binary-field, #decimal-field{
+    border: 3px solid orange;
+    border-radius: 8px;
+    margin: 50px auto;
+    padding: 8px;
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#binary-field{
+    width: 24%;
+}
+
+legend{
+    text-align: left;
+}
+
+#decimal-field{
+    width: 16%;
 }
