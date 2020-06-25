@@ -24,7 +24,7 @@ function binario (id) {
     //console.log(id);//string             
     let k = 1;      
     binaryElement.innerHTML = '';    
-    for(let i = 7; i>0; i--){        
+    for(let i = 7; i>=0; i--){        
         if(id==k)
             arr[i] = 1;            
         k+=k;
@@ -39,7 +39,7 @@ function binario (id) {
 function tiraBinario(id) {
     let k = 1;
     binaryElement.innerHTML = '';
-    for(let i = 7; i>0; i--){
+    for(let i = 7; i>=0; i--){
         if(id==k)
             arr[i] = 0;
         k+=k        
