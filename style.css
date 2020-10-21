@@ -4,7 +4,13 @@ body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     background-color: rgb(27, 27, 27);
-    font-family: sans-serif;
+    font-family: Permanent Marker;
+}
+
+#eunaosei {
+    text-align: center;
+    color: #FFA500;
+    font-size: 50px;
 }
 
 #container {
